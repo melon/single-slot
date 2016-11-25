@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Single Slot</title>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="box">
+                <v-box>
+                    hello
+                    <p>lalala</p>
+                    <p>lilili</p>
+                </v-box>
+            </div>
+            <script>
+                new Vue({
+                    el: '#box',
+                    components: {
+                        "v-box": vueCom.box
+                    },
+                });
+            </script>
+        </div>
+    </body>
+</html>

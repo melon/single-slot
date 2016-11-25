@@ -1,0 +1,24 @@
+{
+  "name": "single-slot",
+  "version": "0.0.1",
+  "description": "single slot debug",
+  "main": "src/index.js",
+  "repository": "https://github.com/melon/single-slot.git",
+  "author": "melon <melon@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot"
+  },
+  "devDependencies": {
+    "babel-core": "6.*",
+    "babel-loader": "6.*",
+    "babel-preset-es2015": "6.*",
+    "babel-runtime": "6.*",
+    "html-webpack-plugin": "^2.22.0",
+    "vue": "^2.1.3",
+    "vue-loader": "^10.0.1",
+    "vue-template-compiler": "^2.1.3",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
