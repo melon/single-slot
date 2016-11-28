@@ -8,6 +8,11 @@ var config = {
     entry: {
         'index': './example/index.js'
     },
+    resolve: {
+        alias: {
+            vue$: 'vue/dist/vue.common.js'
+        }
+    },
     output: {
         path: path.resolve('./build'),
         filename: '[name].js'
@@ -33,6 +38,7 @@ var config = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'example/index.html',
+            inject: false,
         }),
         new webpack.HotModuleReplacementPlugin()
     ]),

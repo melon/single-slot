@@ -1,4 +1,7 @@
-window.Vue = require('vue/dist/vue.js');
-window.vueCom = {
-    box: require('./box.vue'),
-};
+var Vue = require('vue');
+new Vue({
+    el: '#box',
+    components: {
+        "v-box": require('./box.vue')
+    },
+});
