@@ -30,6 +30,11 @@ var config = {
     babel: {
         presets: ['es2015']
     },
+    vue: {
+        postcss: [require('autoprefixer')({
+            browsers: ['Android >= 4', 'ChromeAndroid >= 46', 'iOS >= 8']
+        })],
+    },
     plugins: ([
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
